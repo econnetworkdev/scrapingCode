@@ -11,7 +11,8 @@
 #
 # Happy Coding!
 
-service: numpy-test # NOTE: update this with your service name
+service: numpy-test 
+# NOTE: update this with your service name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -21,6 +22,11 @@ provider:
   name: aws
   runtime: python3.6
   timeout: 200
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+         - lambda:InvokeFunction
+      Resource: "*"
 
 
 plugins:
@@ -67,6 +73,8 @@ package:
 functions:
   numpy:
     handler: handler.main
+  starter:
+    handler: handler.lambdaStarter
     events:
       - schedule: cron(0 12 * * ? *)
 
