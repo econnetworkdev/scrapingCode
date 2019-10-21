@@ -13,7 +13,7 @@ jieba3k==0.35.1
 jmespath==0.9.3
 lxml==4.2.4
 newspaper3k==0.2.7
-nltk==3.3
+nltk==3.4.5
 numpy==1.15.1
 Pillow==5.2.0
 python-dateutil==2.7.3
