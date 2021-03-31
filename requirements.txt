@@ -11,7 +11,7 @@ feedparser==5.2.1
 idna==2.7
 jieba3k==0.35.1
 jmespath==0.9.3
-lxml==4.2.4
+lxml==4.6.3
 newspaper3k==0.2.7
 nltk==3.3
 numpy==1.15.1
