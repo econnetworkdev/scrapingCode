@@ -25,5 +25,5 @@ s3transfer==0.1.13
 six==1.11.0
 tinysegmenter==0.3
 tldextract==2.2.0
-urllib3==1.23
+urllib3==1.26.5
 zope.interface==4.5.0
